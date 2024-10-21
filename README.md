@@ -1,10 +1,10 @@
 # NetflixGPT
 
-# What actions have been taken?
+## What actions have been taken?
  - Initialized the project using Vite.
  - Configured TailwindCSS.
 
-# Features
+## Features
   - Login/Sign Up
     - Login/Signup form redirects to Browse Page
     - Footer
