@@ -3,6 +3,7 @@
 ## What actions have been taken?
  - Initialized the project using Vite.
  - Configured TailwindCSS.
+ - Configured react-router-dom
 
 ## Features
   - Login/Sign Up
