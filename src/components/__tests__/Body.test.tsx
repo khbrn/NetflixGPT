@@ -19,7 +19,7 @@ describe('Body', () => {
         expect(screen.getByText(/login/i)).toBeInTheDocument();
     });
 
-    it('renders the Browser component at root path', () => {
+    it('renders the Browser component at /browse path', () => {
         render(
             <MemoryRouter initialEntries={['/browse']}>
                 <Routes>
