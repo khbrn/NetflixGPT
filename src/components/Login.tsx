@@ -1,7 +1,11 @@
+import Header from "./Header";
+import LoginBackground from "./LoginBackground";
+
 const Login: React.FC = () => {
     return (
-        <div>
-            Login
+        <div className="relative">
+            <Header />
+            <LoginBackground />
         </div>
     )
 }

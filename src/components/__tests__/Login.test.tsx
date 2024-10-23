@@ -4,10 +4,17 @@ import '@testing-library/jest-dom';
 import Login from '../Login';
 
 describe('Login', () => {
-  it('renders the Login text', () => {
+  it('renders the app logo', () => {
     render(<Login />)
     
-    const login = screen.getByText(/login/i);
-    expect(login).toBeInTheDocument();
+    const logo = screen.getByTestId('app-logo');
+    expect(logo).toBeInTheDocument();
+  });
+
+  it('renders the background image', () => {
+    render(<Login />);
+
+    const backgroundImage = screen.getByTestId('bg-image');
+    expect(backgroundImage).toBeInTheDocument();
   })
 })
