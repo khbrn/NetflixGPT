@@ -16,7 +16,7 @@ describe('Body', () => {
         </MemoryRouter>
         );
     
-        expect(screen.getByText(/login/i)).toBeInTheDocument();
+        expect(screen.getByTestId('app-logo')).toBeInTheDocument();
     });
 
     it('renders the Browser component at /browse path', () => {
