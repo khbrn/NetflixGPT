@@ -37,7 +37,7 @@ const LoginForm = () => {
             <p className='text-red-500 pl-3'>{email.errorMessage}</p>
             <input type='password' placeholder='Password' ref={password?.ref} className='p-2 m-3 bg-transparent border border-solid rounded text-white' />
             <p className='text-red-500 pl-3'>{password?.errorMessage}</p>
-            <button type='submit' onClick={ submitFormHandler } className='p-2 m-3 bg-transparent rounded bg-red-700 text-white'>{formType}</button>
+            <button type='submit' onClick={ submitFormHandler } className='p-2 m-3 rounded bg-red-700 text-white'>{formType}</button>
             <p className='text-gray-400 m-3'>{isSignInForm? 'Nie masz jeszcze konta w serwisie Netflix?': 'Masz juz konto Netflix?'}</p>
             <p className='text-white ml-3 cursor-pointer' onClick={ changeFormTypeHandler }>{isSignInForm ? SIGN_UP_TEXT : LOGIN_TEXT}</p>
         </form>
