@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import { validatePassword } from "../utils/validate";
-import { ValidationResult, UseValidateInputHookResult } from "../components/types/validationTypes";
+import { ValidationResult, UseValidateInputHookResult } from "../types/validationTypes";
 
 export const useValiatePassword = () : UseValidateInputHookResult => {
     const ref = useRef<HTMLInputElement | null>(null);

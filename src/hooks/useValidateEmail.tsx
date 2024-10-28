@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { validateEmailAddress } from "../utils/validate";
-import { ValidationResult, UseValidateInputHookResult } from "../components/types/validationTypes";
+import { ValidationResult, UseValidateInputHookResult } from "../types/validationTypes";
 
 export const useValidateEmail = () : UseValidateInputHookResult => {
     const ref = useRef<HTMLInputElement | null>(null);
