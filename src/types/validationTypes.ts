@@ -5,6 +5,6 @@ export interface ValidationResult {
 
 export interface UseValidateInputHookResult {
     ref: React.RefObject<HTMLInputElement>;
-    errorMessage: string;
-    validate: (inputEmail: string) => void;
+    errorMessage: string | null;
+    validate: (inputEmail: string) => boolean;
 }
