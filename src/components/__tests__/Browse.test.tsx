@@ -4,10 +4,10 @@ import '@testing-library/jest-dom';
 import Browse from '../Browse';
 
 describe('Browse', () => {
-  it('renders the Browse text', () => {
+  it('renders header with sign out button', () => {
     render(<Browse />)
     
-    const browse = screen.getByText(/browse/i);
-    expect(browse).toBeInTheDocument();
+    const button = screen.getByRole('button', {name: /sign out/i});
+    expect(button).toBeInTheDocument();
   })
 })

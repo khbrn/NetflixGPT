@@ -29,6 +29,6 @@ describe('Body', () => {
             </MemoryRouter>
         );
 
-        expect(screen.getByText(/browse/i)).toBeInTheDocument()
+        expect(screen.getByRole('button', { name: /sign out/i })).toBeInTheDocument();
     })
 })

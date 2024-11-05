@@ -3,8 +3,6 @@ import { BrowseHeader } from './Header';
 const Browse = () => {
 
     return (
-       
-    
         <BrowseHeader />
     )
 }
