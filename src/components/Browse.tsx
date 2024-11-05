@@ -1,8 +1,11 @@
+import { BrowseHeader } from './Header';
+
 const Browse = () => {
+
     return (
-        <div>
-            Browse
-        </div>
+       
+    
+        <BrowseHeader />
     )
 }
 

@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { auth } from '../../firebase'
 
 const INVALID_CREDENTIALS_REGEX = /auth\/invalid-credential/;
@@ -36,5 +36,12 @@ export const loginUser = ({ email, password, setErrorMessage }: CreateUserAccoun
         .catch((error) => {
         const errorMessage = error.message;
         setErrorMessage(INVALID_CREDENTIALS_REGEX.test(errorMessage) ? INVALID_CREDENTIALS_ERROR_MSG : errorMessage);
+    });
+}
+
+export const logoutUser = () => {
+    signOut(auth).then(() => {
+    }).catch((error) => {
+        console.log(error.message)
     });
 }

@@ -1,4 +1,4 @@
-import Header from "./Header";
+import {Header} from "./Header";
 import LoginBackground from "./LoginBackground";
 import LoginForm from "./LoginForm";
 
