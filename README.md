@@ -1,5 +1,6 @@
 # NetflixGPT
 
+
 ## Deployment
 
 The application is deployed and accessible online at [https://netflixgpt-8e299.web.app/](https://netflixgpt-8e299.web.app/).
@@ -12,7 +13,7 @@ firebase deploy
 ## What actions have been taken?
  - Initialized the project using Vite.
  - Configured TailwindCSS.
- - Configured react-router-dom
+ - Configured react-router-dom 
 
 ## Features
   - Login/Sign Up
